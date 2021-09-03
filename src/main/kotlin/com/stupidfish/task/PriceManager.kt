@@ -12,7 +12,7 @@ class PriceManager(coinTypeIN: String) {
      */
     var runtimes = 0
     val coinType = coinTypeIN
-    fun getOncePrice() {
+    fun getOncePrice() {// : PriceInfo
         /*
         查询一次价格信息并返回
          */
@@ -29,6 +29,7 @@ class PriceManager(coinTypeIN: String) {
         }
 
         runtimes++
+        //这里返回PriceInfo
     }
 
     fun writeLogToFile(priceInfo: PriceInfo) {//读取一次价格信息并且把关键信息写入文件

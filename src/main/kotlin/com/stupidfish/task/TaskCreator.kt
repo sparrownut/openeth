@@ -9,6 +9,5 @@ class TaskCreator {
         val FlushTimeMS = 720 * 60 * 1000L // 720分钟
     }
     fun createTask(coinType:String,accountInfo:AccountInfo){
-
     }
 }

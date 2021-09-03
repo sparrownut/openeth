@@ -15,6 +15,10 @@ class PriceManager(coinTypeIN: String) {
     fun getOncePrice() {// : PriceInfo
         /*
         查询一次价格信息并返回
+        逻辑:
+            如果开机第一次运行 有文件就从文件里读取 并且继续比对pmax和pmin,其他值为现有的
+            如果没有文件就第一次读取并且写入文件
+            每次读取都要覆盖之前的文件
          */
         try {
 
